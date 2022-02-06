@@ -1,0 +1,13 @@
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	cob = checkout -b
+[user]
+	name = heitorcaldeira
+	email = heitorcaldeira@gmail.com
+[core]
+	autocrlf = input
+[http]
+	sslVerify = false
+
