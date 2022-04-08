@@ -22,6 +22,7 @@ set ignorecase
 set nohlsearch
 set ai
 set si
+set scrolloff=5
 set smarttab
 set title
 set hidden
@@ -33,6 +34,7 @@ filetype on
 filetype plugin on
 filetype indent on
 
+lang zh_TW.UTF-8
 runtime ./plug.vim
 runtime ./maps.vim
 
