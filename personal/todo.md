@@ -9,6 +9,7 @@ CLARA.A24857
 FERNANDO.A68334
 U000560
 
+A4372
 
 Variavel Anual -> Total Comp Sugerido - salario fixo mensal * 13.33
 Se nosso salario fixo mensal menor q salario atual = tem upfront -> regra .. (salario atual - salario xp) * (qtde de meses até primeira PLR)
@@ -19,17 +20,20 @@ PLR 2 -> variavel anual / 2
 Upfront 2 = Upfront total / 2
 PLR 2 Final = PLR 2 - Upfront 2
 
------
+1 e 3 - Dinheiro
+2 - %
 
-PLR Proporcional = PLR dos meses trabalhados no primeiro ciclo + segundo ciclo completo
-Upfront fixo
-PLR 1 Proporcional = PLR 1 Prop - (upfront prporcao mensal trabalhada) 
-PLR 1 Proporcional = PLR 1 Prop - (upfront prporcao mensal trabalhada) 
-Upfront / 9  * meses trabalhados no ;rimeiro ciclo
+Tipos de operadores
+1 = Cliente | 2 = Assessor | 3 = Robot Client | 4 = Robot Assessor
+
+Exchange
+1 = BM&F | 2 = Bovespa
+
+DayTrade
+1 = daytrade | 2 = NonDayTrade | 3 = All
+
 
 Diferença absoluta em reais => total comp - cntro faixa (vermelho se positivo, verde se negativo)
-
-
 
 Corrigir total comp candidato na tela de proposta
 adicionar percentual na celula total comp proposta

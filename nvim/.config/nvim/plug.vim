@@ -32,6 +32,8 @@ Plug 'tpope/vim-surround'
 Plug 'nvim-lua/lsp_extensions.nvim'
 Plug 'onsails/lspkind-nvim'
 Plug 'L3MON4D3/LuaSnip'
+Plug 'preservim/nerdtree'
+Plug 'PhilRunninger/nerdtree-visual-selection'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 call plug#end()
