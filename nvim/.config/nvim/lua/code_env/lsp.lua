@@ -23,3 +23,27 @@ require("lspconfig").rust_analyzer.setup(config({
     }
     --]]
 }))
+
+require("lspconfig").gopls.setup(config({
+	on_attach = on_attach_vim,
+	capabilities = capabilities,
+	cmd = {"gopls", "serve"},
+	settings = {
+		gopls = {
+			analyses = {
+				unusedparams = true,
+			},
+			staticcheck = true,
+			linksInHover = false,
+			codelenses = {
+				generate = true,
+				gc_details = true,
+				regenerate_cgo = true,
+				tidy = true,
+				upgrade_depdendency = true,
+				vendor = true,
+			},
+			usePlaceholders = true,
+		},
+	},
+}))

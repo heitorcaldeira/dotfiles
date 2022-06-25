@@ -34,6 +34,14 @@ filetype on
 filetype plugin on
 filetype indent on
 
+let g:NERDTreeHijackNetrw=0
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "my_snippets"]
+
+
 lang zh_TW.UTF-8
 runtime ./plug.vim
 runtime ./maps.vim

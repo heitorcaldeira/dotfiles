@@ -8,7 +8,9 @@ Plug 'SirVer/ultisnips'
 Plug 'mlaursen/vim-react-snippets'
 Plug 'windwp/nvim-ts-autotag'
 Plug 'tpope/vim-commentary' 
+Plug 'darrikonn/vim-gofmt'
 Plug 'tpope/vim-fugitive'
+Plug 'SirVer/ultisnips'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'neovim/nvim-lspconfig'
@@ -22,7 +24,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'cohama/lexima.vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'gruvbox-community/gruvbox'
-Plug 'sheerun/vim-polyglot'
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': 'TSUpdate' }
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
@@ -46,7 +47,7 @@ endif
 
 let g:gruvbox_contrast_dark = "hard"
 colorscheme gruvbox
-let g:UltiSnipsExpandTrigger="<C-l>"
+let g:UltiSnipsExpandTrigger="<tab>"
 " AirLine """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
