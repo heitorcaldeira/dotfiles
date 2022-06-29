@@ -42,7 +42,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "my_snippets"]
 
 
-lang zh_TW.UTF-8
+language en_US
 runtime ./plug.vim
 runtime ./maps.vim
 
