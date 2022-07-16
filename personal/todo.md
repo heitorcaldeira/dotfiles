@@ -11,25 +11,103 @@ U000560
 U002546 - Rico
 
 
-Temrinar download zip
-Cliente duplicado ao importar (validar qtde que ja existe tb)
+
+Sprint 1 
+  Semana 1 
+    Apresentacão (Encontro 1)
+
+    Configurar registry npm (Vídeo)
+    XPCli Repo (Vídeo)
+    Repos e Pipelines (Vídeo)
+    Cerimonias e Board - daily, planning, review, retro (Vídeo)
+
+    CSS - Flexbox e Grid (Encontro 2)
+    Hooks - useEffect, useState, useCallback, useMemo (Encontro 2)
+
+    Mini projeto ? (Assícrono)
+  Semana 2
+    StyledComponents (Encontro 1)
+    Axios (Encontro 1)
+    
+    Teste unitários (Encontro 2)
+
+    Mini projeto (Assícrono com monitoria)
+
+Sprint 2
+  Semana 1
+    Introdução Redux - Hooks (Encontro 1)
+
+    Soma (Encontro 2)
+
+    Mini projeto (Soma e Redux com monitoria)
+  Semana 2 
+    Micro-frontend (Encontro 1)
+    Introdução Arsenal (Encontro 1)
+    
+    Mini projeto - Container e Módulo (Assíncrono)
+
+Sprint 3
+  Semana 1
+    Apresentação do Projeto final (Encontro 1)
+
+    Projeto final com testes unitários (Assíncrono)
+    
+    1 horário por semana para tirar dúvidas (além das monitorias)
+  Semana 2
+    Projeto final com testes unitários (Assíncrono)
+    
+    1 horário por semana para tirar dúvidas (além das monitorias)
+Sprint 4
+  Semana 1
+    Projeto final com testes unitários (Assíncrono)
+    
+    1 horário por semana para tirar dúvidas (além das monitorias)
+  Semana 2
+    Projeto final com testes unitários (Assíncrono)
+    
+    1 horário por semana para tirar dúvidas (além das monitorias)
+
+executionLimitDate
+rebalancingLimitDate
 
 
-HTML, CSS, Javascript (básico com bootstrap e tailwind css)
+# Relatórios
+Heitor
+Integrar filtro com pesquisa via api (mock)
+Desenvolvimento do envio mensal via switch
+Calendário no Soma
+Desenvolver visualização do relatório via ícone
+Limpar store ao sair da aba de Relatórios
+
+Rodrigao
+Tooltip no nome da coluna e nos botões da tabela (conforme figma)
+Ativar ícone de email para enviar via modal 
+Ativar ícone de download na tabela (apenas fazer download e mostrar feedback)
+Validar paginação
+
+Ericao
+Integrar barra de download múltiplo com store
+Integrar envio mensal via barra azul
+Baixar arquivos múltiplos via barra (validar com backend a melhor forma de download)
+Integrar envio de e-mail múltiplo via barra
+
+
+
+
+
+
+1 - Benefícios (colocar mensal na pagina do candidato e no da XP) 
+  criar linha na tabela de beneficios (mensal e anual)
+  remuneraçao liq. + beneficios = anual
+  adicionar campo Outros no da XP (Juntar dois campos VA / VR)
+2 - adicionar % de aumento na aba remuneração liquida
+3 - Exportar relatório
+
+
 Orientação objeto com JS ( e design patterns )
 Assincrono
 Teste unitários
 Build com webpack e com vitejs
-
-
-
-CALCULADORA OFERTAS
-- Calcular Aliquota na pagina de input de dados (ao escolher simples nacional)
-- Não ir pra proxima tela caso aliquot for vazia (pode ser 0, somente PJ)
-- Adicionar benefícios na tabela (candidato e XP)
-- Criar novo Accordion de remuneração líquida Candidato, Sugerida e XP (Remuração Líquida, Remuneração Líquida + Benefícios)
-
-
 
 
 A4372
