@@ -5,6 +5,7 @@ local inoremap = Remap.inoremap
 local xnoremap = Remap.xnoremap
 local nmap = Remap.nmap
 
+
 nnoremap("<leader>pv", ":Ex<CR>")
 nnoremap("<leader>u", ":UndotreeShow<CR>")
 
@@ -16,7 +17,7 @@ nnoremap("<C-d>", "<C-d>zz")
 nnoremap("<C-u>", "<C-u>zz")
 nnoremap("[b", ":bp<CR>")
 nnoremap("]b", ":bn<CR>")
-nnoremap(";f", ":Vexplore <CR>:vertical resize 40<CR>")
+-- nnoremap(";f", ":Vexplore <CR>:vertical resize 40<CR>")
 nnoremap("<leader>]", ":vertical resize +5")
 nnoremap("<leader>[", ":vertical resize -5")
 
@@ -27,7 +28,6 @@ vnoremap("<leader>y", "\"+y")
 nmap("<leader>Y", "\"+Y")
 nmap("<leader>a", "gg<S-v>G")
 
-nnoremap("<leader>d", "\"_d")
 vnoremap("<leader>d", "\"_d")
 
 vnoremap("<leader>d", "\"_d")

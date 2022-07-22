@@ -8,13 +8,14 @@ return require("packer").startup(function()
     use("TimUntersberger/neogit")
     use("tpope/vim-fugitive")
 
+    use("folke/todo-comments.nvim")
     -- TJ created lodash of neovim
     use("nvim-lua/plenary.nvim")
     use("nvim-lua/popup.nvim")
     use("nvim-telescope/telescope.nvim")
 
     use("windwp/nvim-autopairs")
-    use("numToStr/Comment.nvim")
+    use { "numToStr/Comment.nvim", config = function() require('Comment').setup() end }
     -- All the things
     use("neovim/nvim-lspconfig")
     use("hrsh7th/cmp-nvim-lsp")
