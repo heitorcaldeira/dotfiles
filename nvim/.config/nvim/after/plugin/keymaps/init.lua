@@ -18,8 +18,8 @@ nnoremap("<C-u>", "<C-u>zz")
 nnoremap("[b", ":bp<CR>")
 nnoremap("]b", ":bn<CR>")
 -- nnoremap(";f", ":Vexplore <CR>:vertical resize 40<CR>")
-nnoremap("<leader>]", ":vertical resize +5")
-nnoremap("<leader>[", ":vertical resize -5")
+nnoremap("<leader>]", ":vertical resize +5<CR>")
+nnoremap("<leader>[", ":vertical resize -5<CR>")
 
 xnoremap("<leader>p", "\"_dP")
 
