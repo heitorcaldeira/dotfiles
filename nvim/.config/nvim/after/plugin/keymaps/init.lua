@@ -7,6 +7,11 @@ local nmap = Remap.nmap
 
 
 nnoremap("<leader>pv", ":Ex<CR>")
+nnoremap("<leader>pe", function()
+  local previous_buf = vim.api.nvim_get_current_buf()
+  require("nvim-tree").open_replacing_current_buffer()
+  require("nvim-tree").find_file(false, previous_buf)
+end)
 nnoremap("<leader>u", ":UndotreeShow<CR>")
 
 nnoremap("Y", "yg$")

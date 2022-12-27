@@ -11,6 +11,7 @@ local options  =   {
 	expandtab  =  true,
 	tabstop = 2,
 	guicursor = "",
+	guicursor = "",
 	shiftwidth = 2,
 	softtabstop = 2,
 	wrap = false,
@@ -30,7 +31,8 @@ local options  =   {
   swapfile = false,
   backup = false,
   undodir = os.getenv("HOME") .. "/.vim/undodir",
-  undofile = true
+  undofile = true,
+  mouse = ""
 }
 
 for key, value in pairs(options) do
@@ -42,6 +44,7 @@ vim.cmd "set wildignore+=**/coverage/*"
 vim.cmd "set wildignore+=**/node_modules/*"
 vim.cmd "set wildignore+=**/dist/*'"
 vim.cmd "set wildignore+=**/.git/*"
+vim.cmd "set mouse-=a"
 
 vim.g.language = "en_US"
 

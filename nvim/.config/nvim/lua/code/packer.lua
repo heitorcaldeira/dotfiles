@@ -33,7 +33,7 @@ return require("packer").startup(function()
     use("hrsh7th/cmp-path")
     use("hrsh7th/cmp-nvim-lua")
     use "hrsh7th/nvim-cmp" --completion
-    use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
+    -- use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
     use("onsails/lspkind-nvim")
     use("nvim-lua/lsp_extensions.nvim")
     use("glepnir/lspsaga.nvim")
@@ -51,6 +51,16 @@ return require("packer").startup(function()
     use("gruvbox-community/gruvbox")
     use("folke/tokyonight.nvim")
     use("EdenEast/nightfox.nvim")
+    use { "catppuccin/nvim", as = "catppuccin" }
+
+    use {
+      'nvim-tree/nvim-tree.lua',
+      requires = {
+        'nvim-tree/nvim-web-devicons', -- optional, for file icons
+      },
+      tag = 'nightly' -- optional, updated every week. (see issue #1193)
+    }
+
 
     use("nvim-treesitter/nvim-treesitter", {
         run = ":TSUpdate"
