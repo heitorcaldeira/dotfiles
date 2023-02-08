@@ -7,6 +7,7 @@ return require("packer").startup(function()
 
     use("TimUntersberger/neogit")
     use("tpope/vim-fugitive")
+    use("eandrju/cellular-automaton.nvim")
 
     use {
       "folke/todo-comments.nvim",

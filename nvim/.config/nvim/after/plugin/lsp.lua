@@ -37,7 +37,7 @@ cmp.setup({
     ["<C-k>"] = cmp.mapping.select_prev_item(), 
     ["<C-j>"] = cmp.mapping.select_next_item(),
     ['<C-b>'] = cmp.mapping.scroll_docs(-4),
-    ['<C-f>'] = cmp.mapping.scroll_docs(4),
+    ['<C-i>'] = cmp.mapping.scroll_docs(4),
     ['<C-Space>'] = cmp.mapping.complete(),
     ['<C-e>'] = cmp.mapping.abort(),
     ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
@@ -141,6 +141,10 @@ require("lspconfig").jedi_language_server.setup(config())
 
 require("lspconfig").svelte.setup(config())
 
+require("lspconfig").marksman.setup(config())
+
+require("lspconfig").jsonls.setup(config())
+
 require("lspconfig").solang.setup(config())
 
 require("lspconfig").cssls.setup(config())
@@ -160,6 +164,24 @@ require("lspconfig").gopls.setup(config({
 -- who even uses this?
 require("lspconfig").rust_analyzer.setup(config({
 	cmd = { "rustup", "run", "nightly", "rust-analyzer" },
+  settings = {
+      ["rust-analyzer"] = {
+          imports = {
+              granularity = {
+                  group = "module",
+              },
+              prefix = "self",
+          },
+          cargo = {
+              buildScripts = {
+                  enable = true,
+              },
+          },
+          procMacro = {
+              enable = true
+          },
+      }
+  }
 	--[[
     settings = {
         rust = {
