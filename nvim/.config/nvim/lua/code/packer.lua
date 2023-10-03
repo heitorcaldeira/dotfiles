@@ -4,8 +4,16 @@ return require("packer").startup(function()
 
     use("windwp/nvim-ts-autotag")
     use {"prettier/vim-prettier", run = 'yarn install --frozen-lockfile --production' }
+    use("jose-elias-alvarez/null-ls.nvim")
+    use("MunifTanjim/eslint.nvim")
+    use("github/copilot.vim")
 
-    use("TimUntersberger/neogit")
+    use {
+      'lewis6991/gitsigns.nvim',
+      config = function()
+        require('gitsigns').setup()
+      end
+    }
     use("tpope/vim-fugitive")
     use("eandrju/cellular-automaton.nvim")
 
@@ -50,6 +58,7 @@ return require("packer").startup(function()
 
     -- Colorscheme section
     use("gruvbox-community/gruvbox")
+    use("sainnhe/gruvbox-material")
     use("folke/tokyonight.nvim")
     use("EdenEast/nightfox.nvim")
     use { "catppuccin/nvim", as = "catppuccin" }

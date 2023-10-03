@@ -1,10 +1,13 @@
 vim.g.code_colorscheme = "duskfox"
 
 function ColorMyPencils()
-    vim.g.gruvbox_contrast_dark = 'hard'
+    vim.cmd "set termguicolors"
+    vim.g.gruvbox_material_better_performance = 1
     vim.g.tokyonight_transparent_sidebar = true
     vim.g.tokyonight_transparent = true
     vim.g.gruvbox_invert_selection = '0'
+    vim.g.gruvbox_material_background = "hard"
+    vim.g.gruvbox_material_transparent_background = 1
     vim.opt.background = "dark"
 
 

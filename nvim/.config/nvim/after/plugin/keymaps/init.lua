@@ -4,6 +4,7 @@ local vnoremap = Remap.vnoremap
 local inoremap = Remap.inoremap
 local xnoremap = Remap.xnoremap
 local nmap = Remap.nmap
+local gs = require('gitsigns');
 
 
 nnoremap("<leader>pv", ":Ex<CR>")
@@ -48,3 +49,17 @@ nnoremap("<leader>j", "<cmd>lprev<CR>zz")
 nnoremap("<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
 nnoremap("<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 nnoremap("<leader>pf", ":Neoformat<CR>", { silent = true })
+
+vnoremap('<leader>hs', ':Gitsigns stage_hunk<CR>')
+vnoremap('<leader>hr', ':Gitsigns reset_hunk<CR>')
+nnoremap('<leader>hs', ':Gitsigns stage_hunk<CR>')
+nnoremap('<leader>hr', ':Gitsigns reset_hunk<CR>')
+nnoremap('<leader>hS', gs.stage_buffer)
+nnoremap('<leader>hu', gs.undo_stage_hunk)
+nnoremap('<leader>hR', gs.reset_buffer)
+nnoremap('<leader>hp', gs.preview_hunk)
+nnoremap('<leader>hb', function() gs.blame_line{full=true} end)
+nnoremap('<leader>tb', gs.toggle_current_line_blame)
+nnoremap('<leader>hd', gs.diffthis)
+nnoremap('<leader>hD', function() gs.diffthis('~') end)
+nnoremap('<leader>td', gs.toggle_deleted)
