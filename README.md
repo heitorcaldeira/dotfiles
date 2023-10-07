@@ -4,6 +4,8 @@
 
 `rustup component add rust-src`
 
+`rustup toolchain install nightly`
+
 `brew install fzf`
 
 `brew install stow`
